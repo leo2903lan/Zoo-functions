@@ -5,7 +5,8 @@ function getSpeciesByIds(ids, id2) {
 }
 
 function getAnimalsOlderThan(animal, age) {
-  // seu código aqui
+  const bixo = data.species.find((item) => item.name === animal);
+  return bixo.residents.every((idade) => idade.age > age);
 }
 
 function getEmployeeByName(employeeName) {
@@ -30,6 +31,7 @@ function addEmployee(id, firstName, lastName, managers, responsibleFor) {
 function countAnimals(species) {
   // seu código aqui
 }
+countAnimals();
 
 function calculateEntry(entrants) {
   // seu código aqui
