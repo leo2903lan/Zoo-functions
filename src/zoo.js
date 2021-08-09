@@ -48,9 +48,14 @@ function addEmployee(id, firstName, lastName, managers, responsibleFor) {
 }
 
 function countAnimals(species) {
-  // seu código aqui
+  if (species === undefined) {
+    return data.species.reduce((acc, animal) => {
+      acc[animal.name] = animal.residents.length; // uso de brackts notation [] por ser dinamico, com uso de varíavel a chave que vai ser utilizada. por isso não usar dot notation .
+      return acc; // retorna o acumulador para continuar recebendo os outros valores.
+    }, {});
+  }
+  return data.species.find((animal) => animal.name === species).residents.length;
 }
-countAnimals();
 
 function calculateEntry(entrants) {
   // seu código aqui
