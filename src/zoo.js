@@ -58,7 +58,11 @@ function countAnimals(species) {
 }
 
 function calculateEntry(entrants) {
-  // seu código aqui
+  if (entrants === undefined || entrants === {}) return 0;// a ordem interfere total na função, se fizer destruction antes de verificar se os parametro estão undefined, ele recebe valor 0 e não passa no teste unitário para ele.
+  const { Adult = 0, Child = 0, Senior = 0 } = entrants; // iniciar as varíaveis com números pq senão retonra como NaN nos testes.
+  const price = data.prices;
+  const totalPrice = Adult * price.Adult + Child * price.Child + Senior * price.Senior;
+  return totalPrice;
 }
 
 function getAnimalMap(options) {
