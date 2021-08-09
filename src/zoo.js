@@ -82,8 +82,23 @@ function increasePrices(percentage) {
 }
 
 function getEmployeeCoverage(idOrName) {
-  // seu código aqui
+  if (idOrName === undefined) {
+    return {};
+  }
+  const colab = data.employees.find((col) => col.firstName === idOrName
+  || col.id === idOrName
+  || col.lastName === idOrName);
+  const fullName = `${colab.firstName} ${colab.lastName}`;
+  const objt = {};
+  const animalName = data.species.filter((animal) => colab.responsibleFor.includes(animal.id));
+  const animalArray = animalName.map((ani) => ani.name);
+  console.log(animalArray);
+  objt[fullName] = animalArray;
+  return objt;
 }
+getEmployeeCoverage('Ardith');
+
+
 
 module.exports = {
   calculateEntry,
