@@ -1,3 +1,4 @@
+const { prices } = require('./data');
 const data = require('./data');
 
 function getSpeciesByIds(ids, id2) {
@@ -78,7 +79,12 @@ function getOldestFromFirstSpecies(id) {
 }
 
 function increasePrices(percentage) {
-  // seu código aqui
+  const newa = data.prices.Adult + data.prices.Adult * (percentage / 100);
+  const news = data.prices.Senior + data.prices.Senior * (percentage / 100);
+  const newc = data.prices.Child + data.prices.Child * (percentage / 100);
+  prices.Adult = Math.round(newa * 100) / 100;
+  prices.Senior = Math.round(news * 100) / 100;
+  prices.Child = Math.round(newc * 100) / 100;
 }
 
 function getEmployeeCoverage(idOrName) {
@@ -96,9 +102,6 @@ function getEmployeeCoverage(idOrName) {
   objt[fullName] = animalArray;
   return objt;
 }
-getEmployeeCoverage('Ardith');
-
-
 
 module.exports = {
   calculateEntry,
