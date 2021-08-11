@@ -73,7 +73,8 @@ function getAnimalMap(options) {
 function getSchedule(dayName) {
   if (dayName === undefined) {
     Object.keys(hours).map((key) => key.valueOf(hours));
-    console.log(`${Object.keys(hours)}: Open from ${data.hours.Friday.open}am until ${data.hours.Friday.close - 12}pm`);
+    console.log(`${Object.keys(hours)}: Open from ${data.hours.Friday
+      .open}am until ${data.hours.Friday.close - 12}pm`);
   }
 }
 getSchedule();
