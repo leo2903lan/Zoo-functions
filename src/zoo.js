@@ -72,12 +72,24 @@ function getAnimalMap(options) {
 
 function getSchedule(dayName) {
   if (dayName === undefined) {
-    Object.keys(hours).map((key) => key.valueOf(hours));
-    console.log(`${Object.keys(hours)}: Open from ${data.hours.Friday
-      .open}am until ${data.hours.Friday.close - 12}pm`);
+    const agenda = Object.keys(hours).reduce((acc, currentDay) => {
+      acc[currentDay] = `Open from ${data.hours[currentDay].open}am until ${data
+        .hours[currentDay].close - 12}pm`;
+      if (currentDay === 'Monday') { acc[currentDay] = 'CLOSED'; }
+      return acc;
+    }, {});
+    return agenda;
   }
+  if (dayName === 'Monday') {
+    return ({
+      [dayName]: 'CLOSED',
+    });
+  }
+  return ({
+    [dayName]: `Open from ${data.hours[dayName]
+      .open}am until ${data.hours[dayName].close - 12}pm`,
+  });
 }
-getSchedule();
 
 function getOldestFromFirstSpecies(id) {
   const funcionario = data.employees.find((i) => i.id === id);
