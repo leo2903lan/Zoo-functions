@@ -120,7 +120,6 @@ function getEmployeeCoverage(idOrName) {
   const objt = {};
   const animalName = data.species.filter((animal) => colab.responsibleFor.includes(animal.id));
   const animalArray = animalName.map((ani) => ani.name);
-  console.log(animalArray);
   objt[fullName] = animalArray;
   return objt;
 }

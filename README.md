@@ -1,16 +1,13 @@
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
 
-# Boas vindas ao repositório do projeto de ES6 e Higher Order Functions!
+# Boas vindas ao repositório do projeto de Zoo Function!
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+Conhecendo mais do JS, as novas estruturas, ES6 e Higher Order Functions, com mais poder, pude tulizar as funções em conjuntos uma com outras, lendo arquivos separados (dados e funções), simulando um pequeno zoologico com tarefas relacionando funcionários e animais, horários com valor de entrada, entre outros cáculos demosntrados na estrutura desse repositório.
+O projeto foi desenvolvido durante o curso de desenvolvimento web na Trybe!
 
 ---
 
-## Habilidades
-
-Neste projeto, verificamos se você é capaz de:
+## Habilidades desenvolvidas:
 
 - Produzir código legível, conciso e expressivo utilizando as novas funcionalidades do ES6
 - Utilizar as _Higher Order Functions_ para manipular e criar arrays
@@ -20,42 +17,11 @@ Neste projeto, verificamos se você é capaz de:
 
 ---
 
-## Sumário
 
-- [Entregáveis](#entregáveis)
-  - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-  - [Desenvolvimento](#desenvolvimento)
-  - [Data de entrega](#data-de-entrega)
-- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
-  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
-  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
-- [Requisitos do projeto](#requisitos-do-projeto)
-  - [1. Implemente a função getSpeciesByIds](#1-implemente-a-função-getSpeciesByIds)
-  - [2. Implemente a função getAnimalsOlderThan](#2-implemente-a-função-getAnimalsOlderThan)
-  - [3. Implemente a função getEmployeeByName](#3-implemente-a-função-getEmployeeByName)
-  - [4. Implemente a função createEmployee](#4-implemente-a-função-createEmployee)
-  - [5. Implemente a função isManager](#5-implemente-a-função-isManager)
-  - [6. Implemente a função addEmployee](#6-implemente-a-função-addEmployee)
-  - [7. Implemente a função countAnimals](#7-implemente-a-função-countAnimals)
-  - [8. Implemente a função calculateEntry](#8-implemente-a-função-calculateEntry)
-  - [9. Implemente a função getAnimalMap](#9-implemente-a-função-getAnimalMap)
-  - [10. Implemente a função getSchedule](#10-implemente-a-função-getSchedule)
-  - [11. Implemente a função getOldestFromFirstSpecies](#11-implemente-a-função-getOldestFromFirstSpecies)
-  - [12. Implemente a função increasePrices](#12-implemente-a-função-increasePrices)
-  - [13. Implemente a função getEmployeeCoverage](#13-implemente-a-função-getEmployeeCoverage)
-- [Avisos finais](#avisos-finais)
-  - [Code Review](#revisando-um-pull-request)
-  - [Avaliação do projeto](#avaliação-do-projeto)
-  - [Ordem dos requisitos no avaliador automático](#ordem-dos-requisitos-no-avaliador-automático)
+### O QUE FOI DESENVOLVIDO
 
----
-
-## Entregáveis
-
-### O QUE DEVERÁ SER DESENVOLVIDO
-
-Você implementará várias funções para atender aos requisitos propostos e garantir que todas as funções passem nos testes unitários.
+Foi implementada várias funções para atender aos requisitos propostos e garantir que todas as funções passem nos testes unitários (removidos desse repositório,
+sendo utilizado durante o desenvolvimento).
 
 ### DESENVOLVIMENTO
 
